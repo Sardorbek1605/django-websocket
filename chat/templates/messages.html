@@ -101,6 +101,7 @@
                         document.getElementById("bottomOfArea").scrollIntoView({block: 'end', behavior: 'smooth'})
                     }, 0)
                     this.chatSocket.onmessage = (m) => {
+                        console.log(m.data)
                         let message = {
                             fields: {
                                 sender: JSON.parse(m.data).sender.pk,

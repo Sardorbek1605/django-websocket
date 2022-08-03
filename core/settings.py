@@ -139,7 +139,7 @@ CHANNEL_LAYERS = {
     },
 }
 
-LOGIN_REDIRECT_URL = '/messages'
+LOGIN_REDIRECT_URL = '/'
 
 try:
     from .local_settings import *  # noqa
