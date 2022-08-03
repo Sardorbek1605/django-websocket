@@ -2,7 +2,7 @@
 
 {% block content %}
     <v-layout>
-    <v-flex xs2 class="ml-3">
+    <v-flex xs3 class="ml-3">
         <v-card class="rounded mt-2">
             <v-card-title class="blue white--text py-3">Chat list</v-card-title>
             <v-list subheader>
@@ -18,7 +18,7 @@
         </v-card>
     </v-flex>
 
-    <v-flex xs10 class="ma-2 mx-3">
+    <v-flex xs9 class="ma-2 mx-3">
         <v-card class="rounded pb-4">
             <v-card-title class="blue white--text py-3">
                 <v-layout v-if="privateView">
@@ -32,7 +32,7 @@
                 <span v-else> Please select a user to chat with </span>
             </v-card-title>
             <v-divider></v-divider>
-            {% include "./chatAreaBase.html" %}
+            {% include "./chat_area.html" %}
         </v-card>
     </v-flex>
 

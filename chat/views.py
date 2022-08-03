@@ -9,14 +9,19 @@ from chat.models import Message
 from common.models import User
 
 
+@login_required()
+def main(request):
+    return render(request, 'index.html', {})
+
+
 @login_required
 def index(request):
-    return render(request, 'chatRoomIndex.html', {})
+    return render(request, 'chat_index.html', {})
 
 
 @login_required
 def room(request, room_name):
-    return render(request, 'chatRoom.html', {
+    return render(request, 'chat.html', {
         'room_name_json': mark_safe(json.dumps(room_name)),
         'current_user': mark_safe(serializers.serialize('json', [request.user])),
     })

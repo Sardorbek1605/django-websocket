@@ -20,6 +20,7 @@ from chat import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('', views.main, name='main'),
     path('chat/', include('chat.urls')),
     path('messages/', views.messages, name='messages'),
     path('message/<selected_user>/', views.message, name='messages'),

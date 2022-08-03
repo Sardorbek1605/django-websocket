@@ -139,7 +139,7 @@ CHANNEL_LAYERS = {
     },
 }
 
-LOGIN_REDIRECT_URL = '/chat'
+LOGIN_REDIRECT_URL = '/messages'
 
 try:
     from .local_settings import *  # noqa
