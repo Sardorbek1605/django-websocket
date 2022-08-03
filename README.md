@@ -1,1 +1,1 @@
-# CLC-boilerplate
+# Django Websocket
